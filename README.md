@@ -1,8 +1,5 @@
 # TECH_DOCS | Index de Documentation SISR
 
-[![Status](https://img.shields.io/badge/Status-En_Production-success?style=for-the-badge)](#)
-[![Tech](https://img.shields.io/badge/Tech-SISR-00f2fe?style=for-the-badge)](#)
-[![UI](https://img.shields.io/badge/UI-Glassmorphism-7000ff?style=for-the-badge)](#)
 
 Ce projet est une plateforme web moderne servant d'index centralisé pour un serveur web de vidéo style "YouTube" réalisées en **BTS SIO SISR**. L'interface adopte un style **Glassmorphism** (effet de verre) avec une ergonomie.
 
