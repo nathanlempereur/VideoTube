@@ -37,7 +37,7 @@ Ce projet est une plateforme web moderne servant d'index centralisé pour un ser
     * Sélectionnez la branche `main` et le dossier `/ (root)`.
     * Votre site est en ligne en quelques secondes.
   
-    Ou Installez le sur un serveur Apache2 dans votre répertoire '/var/www/html', aucun mod supplémentaire n'es nécessaire. 
+    Ou Installez le sur un serveur Apache2 dans votre répertoire `/var/www/html`, aucun mod supplémentaire n'es nécessaire. 
 
 
 ## Aperçu de la Logique JS
