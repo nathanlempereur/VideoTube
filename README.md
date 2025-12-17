@@ -3,7 +3,9 @@
 
 Ce projet est une plateforme web moderne servant d'index centralisé pour un serveur web de vidéo style "YouTube" réalisées en **BTS SIO SISR**. L'interface adopte un style **Glassmorphism** (effet de verre) avec une ergonomie.
 
-<img width="1886" height="890" alt="image" src="https://github.com/user-attachments/assets/570c347d-bb08-4e34-99db-a7d99002d712" />
+
+<img width="1887" height="889" alt="image" src="https://github.com/user-attachments/assets/09534a91-8d12-4828-a701-bc8402e5378c" />
+
 
 
 ## Aspect du Projet
