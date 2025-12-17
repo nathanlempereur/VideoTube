@@ -1,4 +1,4 @@
-# TECH_DOCS | Index de Documentation SISR
+# VideoTube | Plateforme de vidéo Web
 
 
 Ce projet est une plateforme web moderne servant d'index centralisé pour un serveur web de vidéo style "YouTube" réalisées en **BTS SIO SISR**. L'interface adopte un style **Glassmorphism** (effet de verre) avec une ergonomie.
