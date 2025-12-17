@@ -45,8 +45,8 @@ Ce projet est une plateforme web moderne servant d'index centralisé pour un ser
 * [GitHub](https://github.com/nathanlempereur)
 * [LinkedIn](https://www.linkedin.com/in/nathan-lempereur-989624373)
 * [Site Web](https://nlempereur.ovh)
-
 Ce projet a été conçu dans un but pédagogique et est Open-Source, vous pouvez le modifier, l’améliorer et proposer des mises à jour.
+
 ---
 
 © 2025 Nathan Lempereur — Tous droits réservés
