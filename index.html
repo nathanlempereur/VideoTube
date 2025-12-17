@@ -100,6 +100,19 @@
             outline: none;
         }
 
+        #no-results {
+            display: none; /* Masqué par défaut */
+            background: var(--glass-bg);
+            border-radius: 20px;
+            border: 1px solid var(--border-glass);
+            padding: 50px;
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin: 20px 0;
+            grid-column: 1 / -1; /* Prend toute la largeur de la grille */
+        }
+
         /* --- SIDEBAR FLOTTANTE --- */
         aside {
             width: var(--sidebar-width);
@@ -291,33 +304,51 @@
 
         </div>
 </main>
-
 <script>
     // Initialisation des icônes Lucide
     lucide.createIcons();
 
-    // Logique de recherche (Simple)
+    // Récupération des éléments
     const searchInput = document.getElementById('searchInput');
-    const cards = document.querySelectorAll('.video-card');
+    const videoGrid = document.getElementById('videoGrid');
     const noResults = document.getElementById('no-results');
+
+    // On récupère les cartes (on utilise .video-card ici)
+    const cards = document.querySelectorAll('.video-card');
 
     searchInput.addEventListener('input', (e) => {
         const value = e.target.value.toLowerCase().trim();
-        let count = 0;
+        let totalVisible = 0;
 
+        // Si la barre de recherche est vide
+        if (value === "") {
+            cards.forEach(card => card.style.display = 'block');
+            noResults.style.display = 'none';
+            return;
+        }
+
+        // Filtrage des cartes vidéo
         cards.forEach(card => {
+            // On cherche dans le titre (h3) et les infos de chaîne (video-meta)
             const title = card.querySelector('h3').textContent.toLowerCase();
-            if(title.includes(value)) {
+            const meta = card.querySelector('.video-meta').textContent.toLowerCase();
+            
+            if (title.includes(value) || meta.includes(value)) {
                 card.style.display = 'block';
-                count++;
+                totalVisible++;
             } else {
                 card.style.display = 'none';
             }
         });
 
-        noResults.style.display = (count === 0 && value !== "") ? 'block' : 'none';
+        // Gestion de l'affichage du message d'erreur
+        // On l'affiche seulement si totalVisible est 0 ET que l'utilisateur a tapé quelque chose
+        if (totalVisible === 0) {
+            noResults.style.display = 'block';
+        } else {
+            noResults.style.display = 'none';
+        }
     });
 </script>
-
 </body>
 </html>
