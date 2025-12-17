@@ -22,7 +22,7 @@ Ce projet est une plateforme web moderne servant d'index centralisé pour un ser
 | **Icônes** | Lucide Icons & Font-Awesome 6 |
 
 
-## ⚙️ Installation & Déploiement
+## Installation & Déploiement
 
 1.  **Localement** :
     ```bash
@@ -38,24 +38,6 @@ Ce projet est une plateforme web moderne servant d'index centralisé pour un ser
     * Votre site est en ligne en quelques secondes.
   
     Ou Installez le sur un serveur Apache2 dans votre répertoire `/var/www/html`, aucun mod supplémentaire n'es nécessaire. 
-
-
-## Aperçu de la Logique JS
-
-Le filtrage dynamique fonctionne via un écouteur d'événement sur la barre de recherche. Il scanne en temps réel le contenu textuel de chaque carte (`.doc-card`) et ajuste la propriété `display`.
-
-```JavaScript
-const searchInput = document.getElementById('searchInput');
-const cards = document.querySelectorAll('.doc-card');
-
-searchInput.addEventListener('input', (e) => {
-    const val = e.target.value.toLowerCase().trim();
-    cards.forEach(card => {
-        const isMatch = card.innerText.toLowerCase().includes(val);
-        card.style.display = isMatch ? 'block' : 'none';
-    });
-});
-```
 
 ## Contribution & Licence 
 
