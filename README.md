@@ -44,7 +44,7 @@ Ce projet est une plateforme web moderne servant d'index centralisé pour un ser
 
 Le filtrage dynamique fonctionne via un écouteur d'événement sur la barre de recherche. Il scanne en temps réel le contenu textuel de chaque carte (`.doc-card`) et ajuste la propriété `display`.
 
-```javascript
+`
 const searchInput = document.getElementById('searchInput');
 const cards = document.querySelectorAll('.doc-card');
 
@@ -54,7 +54,7 @@ searchInput.addEventListener('input', (e) => {
         const isMatch = card.innerText.toLowerCase().includes(val);
         card.style.display = isMatch ? 'block' : 'none';
     });
-});```
+});`
 
 ## Contribution & Licence 
 
