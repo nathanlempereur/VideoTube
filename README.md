@@ -27,20 +27,12 @@ Ce projet est une plateforme web moderne servant d'index centralisé pour un ser
 
 ## Installation & Déploiement
 
-1.  **Localement** :
-    ```bash
-    git clone [https://github.com/nathanlempereur/nom-du-repo.git](https://github.com/nathanlempereur/VideoTube.git)
-    open index.html
-    ```
-
-2.  **Hébergement** : 
-    Le projet est entièrement statique et compatible à 100% avec **GitHub Pages**. 
-    * Allez dans les `Settings` de votre dépôt.
-    * Section `Pages`.
-    * Sélectionnez la branche `main` et le dossier `/ (root)`.
-    * Votre site est en ligne en quelques secondes.
-  
-    Ou Installez le sur un serveur Apache2 dans votre répertoire `/var/www/html`, aucun mod supplémentaire n'es nécessaire. 
+1.  **Hébergement** : 
+    Le projet est entièrement statique et compatible à 100% avec **Apache2**. 
+    * Installez apache2.
+    * Insérez les fichier du dossier dans le répertoire Apache
+    * Dans le navigateur (https://localhost) 
+   
 
 ## Contribution & Licence 
 
